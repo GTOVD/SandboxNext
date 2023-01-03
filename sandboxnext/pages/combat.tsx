@@ -1,4 +1,4 @@
-import { DiceRoll, EventSimulation, generateHitPoints } from "./api/DiceRoll";
+import { DiceRoll, EventSimulation, generateHitPoints } from "./api/diceroll";
 
 export const initiative = (initiativeBonus: number, diceRoll: number) => {
     return DiceRoll(diceRoll) + initiativeBonus;
