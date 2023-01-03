@@ -1,4 +1,4 @@
-export function DiceRoll(sides: number) {
+export function DiceRoll(sides: number): number {
     return Math.floor(Math.random() * sides + 1);
 }
 
@@ -21,7 +21,6 @@ export const generateHitPoints = (
     healthMinimum: number,
     hitPoints = 0
 ): number => {
-    console.log(hitPoints);
     if (level === 1) return diceRoll + constitutionModifier + hitPoints;
     const bonusHealth = DiceRoll(diceRoll);
     return generateHitPoints(
