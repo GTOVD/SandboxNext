@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { DiceRoll, EventSimulation, generateHitPoints } from "./api/DiceRoll";
+import { DiceRoll, EventSimulation, generateHitPoints } from "./api/diceroll";
 type classTypeUnion =
     | "Barbarian"
     | "Bard"
