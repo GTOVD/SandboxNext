@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
-import Game from "./game";
 import { QueryClient, QueryClientProvider } from "react-query";
 import CharCreator from "./charcreator";
 import Combat from "./combat";
@@ -26,7 +25,6 @@ export default function Home() {
             <main className={styles.main}>
                 <Combat />
                 <CharCreator />
-                <Game />
             </main>
         </QueryClientProvider>
     );
